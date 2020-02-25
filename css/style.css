@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Asap;
+}
+
+body {
+    background: #81b14f;
+    color: #451b04; 
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: 	#c4bd8b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#hamburger {
+    display: none;
+}
+#header-img {
+    margin: .5em 1.5em;
+    height: 60px;
+}
+
+#nav-bar li {
+    display: inline-block;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #451b04; 
+    padding .2em 1em;
+    margin: 0 1em;
+}
+
+.nav-link:hover {
+    color: #451;
+    border-bottom: solid 2px #451;
+}
+
+#hero {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+#hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+#hero p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 1em
+}
+
+#video-promo {
+    text-align: center;
+    margin: auto;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin: 2em auto;
+    text-align: center;
+    max-width: 65vw;
+}
+
+.card {
+    border: 1px solid #451b04; 
+    height: 350px;
+    padding: 2em .7em;
+}
+
+.card i {
+    margin-bottom: .5em;
+}
+#form {
+    display: block;
+    width: 100%;
+    padding: .5em;
+    margin: .5em auto;
+    text-align: center;
+    font-size: 16px;
+    background-color: #451b04; 
+    color: #fff;
+}
+
+main {
+    margin-top: 100px;
+}
+#form p {
+    font-size: 20px;
+    margin-bottom: .5em;
+    font-weight: 500;
+}
+
+label {
+    margin: 1em 0 .5em 1.5em;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: .5em;
+    font-size: 18px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: .5em auto .2em;
+    background-color: #fff;
+    border: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    background-color: #451b04; 
+    color: #fff;
+    max-height: 100px;
+}
+
+
+footer p {
+    margin: auto
+}
+
+/* Media Query for mobile */ 
+@media(max-width: 650px) {
+    #nav-bar .nav-link {
+        display: none;
+    }
+    
+    iframe {
+        width: 90%;;
+    }
+
+    #hamburger {
+        display: block;
+        text-align: center;
+        margin: 1em;
+    }
+    #services {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #form label{
+        display: none;
+    }
+
+    #form input {
+        width: 60%;
+        margin: .3em;
+    }
+}
+
+@media(max-width: 900px) {
+    #services {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+        
+    iframe {
+        width: 90%;;
+    }
+}
